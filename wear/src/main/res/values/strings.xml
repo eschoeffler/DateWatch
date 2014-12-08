@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">Date Watch Face</string>
+  <string name="analog_name">Date Watch (Analog)</string>
+  <string name="digital_name">Date Watch (Digital)</string>
+  <string name="now">Now</string>
+  <string name="one_min">1 min</string>
+  <string name="minutes">%1$d mins</string>
+</resources>

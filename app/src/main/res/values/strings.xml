@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <string name="app_name">Date Watch Face</string>
+  <string name="show_calendar_events">Show calendar events</string>
+  <string name="show_text_on_top">Show text above clock</string>
+  <string name="use_24_hour_clock">Use 24 hour clock</string>
+  <string name="use_edge_ticks">Fill space (for rectangular faces)</string>
+</resources>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/black"
+             tools:context=".DigitalWatchFaceActivity"
+             tools:deviceIds="wear_round">
+
+  <com.eschoeffler.datewatch.ClockView
+      android:id="@+id/clock"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"/>
+  <LinearLayout
+      android:id="@+id/text"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:padding="8dp"
+      android:orientation="vertical"
+      android:layout_centerHorizontal="true"
+      android:gravity="center_horizontal">
+    <TextView
+        android:id="@+id/day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/date"
+        android:text="Mon 20"
+        android:textSize="12dp"
+        android:textColor="@color/gray"
+        android:layout_marginTop="5dp"/>
+    <TextView
+        android:id="@+id/time"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12:45"
+        android:textSize="45dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/topbottom"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+      <TextView
+          android:id="@+id/timeTill"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="15 mins "
+          android:textSize="12dp"
+          android:textColor="@color/white"
+          android:layout_marginRight="2dp"/>
+      <TextView
+          android:id="@+id/nextEvent"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="TL Meeting"
+          android:textSize="12dp"
+          android:maxLines="1"
+          android:ellipsize="end"
+          android:textColor="@color/gray"/>
+    </LinearLayout>
+  </LinearLayout>
+</FrameLayout>
